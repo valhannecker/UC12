@@ -1,0 +1,13 @@
+
+
+header {
+    background-color: rgb(71, 218, 169);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.jolyne-img{
+    height: 350px;
+}
