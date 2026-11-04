@@ -20,42 +20,132 @@
             </nav>
     </header>
 
-    <br>
 
     <main>
-        <section id="Sobre">
+        <section id="sobre">
+            <img src="IMG_6713.jpeg" alt="Imagem" class="imagem-perfil">
+
             <div class="sobre-container">
-                <img src="IMG_6713.jpeg" alt="Imagem" class="imagem-perfil">
+                
                      <div class="sobre-texto">
                         <h2>Sobre mim</h2>
-                        <p> Olá! Meu nome é Valentina estou cursando o <span>Técnico em Desenvolvimento de
+                        <p> Olá! Meu nome é Valentina estou cursando o <span class = destaque>Técnico em Desenvolvimento de
                             Sistemas</span> do Senac. Tenho interesse pela área da tecnologia e gosto muito de
-                            aprender coisas novas e desenvolver projetos.</p>
+                            aprender coisas novas e desenvolver projetos.
+                        </p>
+
+                        <p>
+                        Atualmente, estou desenvolvendo minhas habilidades
+                        na área de <span class = destaque>desenvolvimento de software</span>,
+                        buscando conhecimento e minha primeira oportunidade
+                        profissional na tecnologia.
+                        </p>
                     </div>
             </div>
         </section>
 
-        <hr>
+        
 
-        <section id="Habilidades">
-            <h2>Habilidades</h2>
+        <section id="habilidades">
+            <div class="habilidades">
+                <h2>Habilidades</h2>
+                    <p>
+                    Algumas das tecnologias e competências que venho
+                    desenvolvendo durante minha trajetória:
+                </p>
+
+                <ul>
+                    <li>HTML e <span class = destaque>CSS</span></li>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>Git e GitHub</li>
+                    <li>Trabalho em equipe</li>
+                    <li>Facilidade de aprendizado</li>
+                    <li>Comunicação e criatividade</li>
+                </ul>
+            </div>
         </section>
 
-        <hr>
 
-        <section id="Projetos">
-            <h2>Projetos</h2>
+        <section id="projetos">
+            <div class = projetos>
+                <h2>Projetos</h2>
+                <div class="projeto">
+
+                    <h3>Materna</h3>
+
+                    <p>
+                        Aplicação desenvolvida para criar uma comunidade
+                        digital para mães, oferecendo espaço para troca
+                        de experiências, doações de itens infantis e
+                        acesso a materiais de apoio.
+                    </p>
+
+                    <h3>Funcionalidades</h3>
+
+                    <ul>
+                        <li>Cadastro e solicitação de itens de maternidade</li>
+                        <li>Postagens publicas ou anônimas</li>
+                        <li>Blogs e matérias informativas relevantes</li>
+                        <li>Cadastro de psicólogas voluntárias</li>
+                    </ul>
+
+                    <a href="https://github.com/LiegeLuiza/PI-MATERNA" target="_blank">
+                        Conheça o projeto
+                    </a>
+
+                </div>
+            </div>
         </section>
 
-        <hr>
 
-        <section id="Contato">
-            <h2>Contato</h2>
+            <section id="contato">
+                <div class = contato>
+                <h2>Contato</h2>
+                <p>
+                    Tem alguma dúvida, sugestão ou oportunidade?
+                    Preencha o formulário abaixo!
+                </p>
+
+                <form>
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"
+                        placeholder="Digite seu nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email"
+                        placeholder="Digite seu e-mail" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem"
+                        placeholder="Escreva sua mensagem"
+                        required></textarea>
+
+                    <label for="origem">Como me conheceu?</label>
+
+                    <select id="origem" name="origem" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="instagram">Instagram</option>
+                        <option value="linkedin">LinkedIn</option>
+                        <option value="indicacao">Indicação</option>
+                        <option value="outros">Outros</option>
+                    </select>
+
+                    <button type="submit">Enviar mensagem</button>
+
+                </form>
+                </div>
+            </section>
         </section>
 
         
     </main>
 
-
+    <footer>
+        <p> 2026 - Portfólio pessoal | Desenvolvido por Valentina</p>
+        <p>Desenvolvimento de Sistemas | Senac</p>
+    </footer>
 </body>
 </html>
