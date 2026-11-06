@@ -1,0 +1,19 @@
+.logo{
+    height: 30px;
+}
+
+.title_logo{
+    height: 37px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic{
+    height: 100px;
+    display: flex;
+    justify-content: column;
+    align-items: center;
+}
