@@ -11,11 +11,19 @@ body {
     color: #262626;
 }
 
+.comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    flex: 1;
+}
+
 h1, h2, h3 {
     font-weight: 600;
 }
 
-p, a, li, h4 {
+p, a, li {
     font-weight: 400;
 }
 
@@ -26,8 +34,10 @@ p, a, li, h4 {
     gap: 20px;
 }
 
-h4 {
-    color: rgb(163, 163, 163)    
+.nome {
+    color: rgb(163, 163, 163);
+    font-weight: 400;
+    padding: 5px;    
 }
 
 .info {
@@ -46,10 +56,63 @@ h4 {
 
 .followers p, .following p, .posts p {
     color: gray;
+    font-size: small;
+}
+
+.foto-publicacao {
+    height: 100%;
+    width: 100%;
+}
+
+.foto-comentario {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
 }
 
 .logo{
     height: 30px;
+}
+
+.perfil-publicacao {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    gap: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.perfil-publicacao p {
+    margin: 3px 0;
+    color: #999;
+    font-size: 12px;
+}
+
+.perfil-publicacao span {
+    margin-left: auto;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.publicacao {
+    display: flex;
+    width: 100%;
+    height: 700px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.foto-perfil {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ff3158;
 }
 
 .profile {
@@ -60,20 +123,52 @@ h4 {
 }
 
 .profile-pic{
-    height: 150px;
+    height: 180px;
     padding: 15px;
 }
 
 #search {
-    padding: 5px;
-    border-radius: 5px;
-    margin: 20px;
-    color: rgb(163, 163, 163);
+    width: 250px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #efefef;
+    font-size: 14px;
+    outline: none;
 }
 
 .sidebar {
     display: flex;
     flex-direction: column;
+}
+
+.stories {
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.stories p {
+    padding-top: 10px;
+}
+
+.story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: smaller;
+}
+
+.story-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 2px solid rgb(255, 140, 17);
+    
 }
 
 .title_logo{
