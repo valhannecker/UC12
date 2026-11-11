@@ -9,14 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #262626;
-}
-
-.comentarios {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 15px;
-    flex: 1;
+    background-color: white;
 }
 
 h1, h2, h3 {
@@ -27,25 +20,68 @@ p, a, li {
     font-weight: 400;
 }
 
+/* CONTAINER PRINCIPAL */
+
 .container {
     display: flex;
     flex-direction: row;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-width: 300px;
     padding: 20px;
-    gap: 20px;
+    border-right: 1px solid #dbdbdb;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 8px;
+}
+
+.logo {
+    height: 30px;
+}
+
+.title_logo {
+    height: 37px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 10px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 10px;
 }
 
 .nome {
     color: rgb(163, 163, 163);
     font-weight: 400;
-    padding: 5px;    
+    padding: 5px;
 }
 
 .info {
     display: flex;
     flex-direction: row;
-    padding: 25px;
-    gap: 35px;
-    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    gap: 30px;
 }
 
 .followers, .following, .posts {
@@ -59,20 +95,123 @@ p, a, li {
     font-size: small;
 }
 
-.foto-publicacao {
-    height: 100%;
-    width: 100%;
+/* CONTEÚDO PRINCIPAL */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    padding: 25px;
+    gap: 25px;
 }
 
-.foto-comentario {
-    width: 50px;
-    height: 50px;
-    border-radius: 100px;
+#search {
+    width: 250px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #efefef;
+    font-size: 14px;
+    outline: none;
 }
 
-.logo{
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+}
+
+.home-icons {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+#reel-icon {
+    width: 30px;
     height: 30px;
 }
+
+
+/* STORIES */
+
+.stories {
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    font-size: smaller;
+}
+
+.story p {
+    padding-top: 10px;
+}
+
+.story-img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid #ff3158;
+    object-fit: cover;
+}
+
+/* FEED */
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 850px;
+    gap: 20px;
+}
+
+.publicacao {
+    display: flex;
+    width: 100%;
+    min-height: 550px;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+/* IMAGEM DA PUBLICAÇÃO */
+
+.imagem-container {
+    display: flex;
+    width: 60%;
+    background-color: #fafafa;
+}
+
+.imagem-post {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* DETALHES DA PUBLICAÇÃO */
+
+.detalhes-publicacao {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-width: 0;
+}
+
+/* PERFIL DA PUBLICAÇÃO */
 
 .perfil-publicacao {
     display: flex;
@@ -90,22 +229,7 @@ p, a, li {
 
 .perfil-publicacao span {
     margin-left: auto;
-}
-
-.feed {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.publicacao {
-    display: flex;
-    width: 100%;
-    height: 700px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: white;
+    cursor: pointer;
 }
 
 .foto-perfil {
@@ -113,72 +237,84 @@ p, a, li {
     height: 40px;
     border-radius: 50%;
     border: 2px solid #ff3158;
+    object-fit: cover;
 }
 
-.profile {
+/* COMENTÁRIOS */
+
+.comentarios {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 45px;
-}
-
-.profile-pic{
-    height: 180px;
+    gap: 20px;
     padding: 15px;
+    flex: 1;
 }
 
-#search {
-    width: 250px;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 8px;
-    background-color: #efefef;
+.comentario {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comentario p {
     font-size: 14px;
-    outline: none;
 }
 
-.sidebar {
+.foto-comentario {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* SUGESTÕES DE CONTAS */
+
+.sugestoes {
     display: flex;
     flex-direction: column;
+    padding: 15px 5px;
+    gap: 20px;
 }
 
-.stories {
-    border: 1px solid rgb(163, 163, 163);
-    border-radius: 10px;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
+.sugestoes h4 {
+    font-size: 14px;
+    color: #737373;
 }
 
-.stories p {
-    padding-top: 10px;
-}
-
-.story{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: smaller;
-}
-
-.story-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 100px;
-    border: 2px solid rgb(255, 140, 17);
-    
-}
-
-.title_logo{
-    height: 37px;
-}
-
-.titulo {
+.sugestao {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px;
+    gap: 10px;
 }
 
+.sugestao-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dados-sugestao {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+    min-width: 0;
+}
+
+.dados-sugestao strong {
+    font-size: 13px;
+}
+
+.dados-sugestao p {
+    font-size: 11px;
+    color: #999;
+}
+
+.sugestao a {
+    text-decoration: none;
+    color: #0095f6;
+    font-size: 12px;
+    font-weight: 600;
+}
