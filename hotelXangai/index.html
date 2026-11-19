@@ -1,93 +1,397 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tai Hotel</title>
+
+    <title>TAI Hotel | Shanghai</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <header>
-        <h1>Tai Hotel</h1>
-        <nav>
-            <a class = "nav-opcao" href = "sobre"> Sobre nós</a>
-            <a class = "nav-opcao" href = "suites"> Suítes</a>
-            <a class = "nav-opcao" href = "localizacao"> Localização</a>
-            <a class = "nav-opcao" href = "turismo"> Turismo</a>
+
+    <!-- CABEÇALHO -->
+
+    <header class="cabecalho">
+
+        <h1 class="cabecalho-titulo">TAI Hotel</h1>
+
+        <nav class="menu">
+
+            <a class="menu-opcao" href="#sobre">Sobre nós</a>
+
+            <a class="menu-opcao" href="#suites">Suítes</a>
+
+            <a class="menu-opcao" href="#localizacao">Localização</a>
+
+            <a class="menu-opcao" href="#turismo">Turismo</a>
+
         </nav>
+
     </header>
 
-    <main>
-        <section id = sobre>
-            <img src="https://viajeleve.net/v23/wp-content/uploads/2019/03/Yu-Market-Xangai.webp" id="sobre-imagem">
 
-            <div class = "sobre-container">
-                <div class = "sobre-texto">
-                    <h2>Mais do que uma hospedagem, uma experiência.</h2>
-                    <p> O TAI Hotel nasceu com o propósito de proporcionar aos seus hóspedes uma experiência inesquecível em uma das cidades mais fascinantes do mundo: <span class= destaque>Xangai.</span>
-                    Inspirado na harmonia entre a cultura tradicional chinesa e a arquitetura contemporânea, nosso hotel oferece ambientes sofisticados, atendimento acolhedor e todo o conforto necessário para tornar sua viagem especial.
-                    Seja para explorar os pontos turísticos, conhecer a gastronomia local ou simplesmente relaxar, o TAI é o lugar ideal para sua estadia.</p>
-                
-                    <ul>Nossos diferenciais:
-                        <li> Atendimento 24 horas.</li>
-                        <li> Ambientes modernos e aconchegantes.</li>
-                        <li> Gastronomia internacional e chinesa.</li>
-                        <li> Localização privilegiada.</li>
-                        <li> Experiência que une tradição e modernidade.</li>
+    <main>
+
+        <!-- SOBRE O HOTEL -->
+
+        <section id="sobre" class="sobre">
+
+            <img
+                src="https://viajeleve.net/v23/wp-content/uploads/2019/03/Yu-Market-Xangai.webp"
+                alt="Arquitetura tradicional chinesa em Xangai"
+                class="sobre-imagem"
+            >
+
+            <div class="sobre-container">
+
+                <div class="sobre-texto">
+
+                    <h2 class="sobre-titulo">
+                        Mais do que uma hospedagem, uma experiência.
+                    </h2>
+
+                    <p>
+                        O TAI Hotel nasceu com o propósito de proporcionar aos seus hóspedes uma experiência inesquecível em uma das cidades mais fascinantes do mundo:
+                        <span class="destaque">Xangai.</span>
+
+                        Inspirado na harmonia entre a cultura tradicional chinesa e a arquitetura contemporânea, nosso hotel oferece ambientes sofisticados, atendimento acolhedor e todo o conforto necessário para tornar sua viagem especial.
+
+                        Seja para explorar os pontos turísticos, conhecer a gastronomia local ou simplesmente relaxar, o TAI é o lugar ideal para sua estadia.
+                    </p>
+
+                    <h3 class="sobre-subtitulo">Nossos diferenciais</h3>
+
+                    <ul class="sobre-lista">
+
+                        <li>Atendimento 24 horas.</li>
+
+                        <li>Ambientes modernos e aconchegantes.</li>
+
+                        <li>Gastronomia internacional e chinesa.</li>
+
+                        <li>Localização privilegiada.</li>
+
+                        <li>Experiência que une tradição e modernidade.</li>
+
                     </ul>
+
                 </div>
+
             </div>
+
         </section>
 
-        <section id = "suites">
-            <div class="suites-container">
-                <div class="suites-texto">
-                    <h2>Encontre seu espaço ideal</h2>
-                        <h4>Cada acomodação foi cuidadosamente planejada para oferecer conforto, privacidade e sofisticação.</h4>
-                          <div class="suites-card"> 
-                                <p class="destaque">Standard Room</p>
-                                <p class="subtitulo">A partir de ¥680 / noite</p>
-                                <p>Ideal para viajantes que procuram praticidade e conforto.</p>
-                                <ul>
-                                    <li>Cama queen-size</li>
-                                    <li>Wi-Fi gratuito</li>
-                                    <li>Banheiro privativo</li>
-                                    <li>Vista urbana</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="suites-card">
-                                <p class="destaque">Deluxe Suite</p>
-                                <p class="subtitulo">A partir de ¥980 / noite</p>
-                                <p>Mais espaço e sofisticação para uma hospedagem especial.</p>
-                                <ul>
-                                    <li>Cama king-size</li>
-                                    <li>Vista panorâmica da cidade</li>
-                                    <li>Area de descanso</li>
-                                    <li>Banheira</li>
-                                </ul>
-                            </div>
 
-                            <div class ="suites-card">
-                                <p class="destaque"> Presidential Suite</p>
-                                <p class="subtitulo">A partir de ¥1.880 / noite</p>
-                                <p>Uma experiencia de luxo e exclusividade.</p>
-                                <ul>
-                                    <li>Suíte ampla</li>
-                                    <li>Sala de estar privativa</li>
-                                    <li>Vista privilegiada</li>
-                                    <li>Serviço de quarto exclusivo</li>
-                                </ul>
-                            </div>
+        <!-- SUÍTES -->
+
+        <section id="suites" class="suites">
+
+            <div class="suites-container">
+
+                <h2 class="suites-titulo">Encontre seu espaço ideal</h2>
+
+                <p class="suites-descricao">
+                    Cada acomodação foi cuidadosamente planejada para oferecer conforto, privacidade e sofisticação.
+                </p>
+
+
+                <div class="suites-lista">
+
+
+                    <!-- STANDARD ROOM -->
+
+                    <div class="suites-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=85"
+                            alt="Quarto Standard do TAI Hotel"
+                            class="suites-imagem"
+                        >
+
+                        <h3 class="suites-nome">Standard Room</h3>
+
+                        <p class="suites-preco">A partir de ¥680 / noite</p>
+
+                        <p>
+                            Ideal para viajantes que procuram praticidade e conforto.
+                        </p>
+
+                        <ul class="suites-comodidades">
+
+                            <li>Cama queen-size</li>
+
+                            <li>Wi-Fi gratuito</li>
+
+                            <li>Banheiro privativo</li>
+
+                            <li>Vista urbana</li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- DELUXE SUITE -->
+
+                    <div class="suites-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=85"
+                            alt="Quarto Deluxe do TAI Hotel"
+                            class="suites-imagem"
+                        >
+
+                        <h3 class="suites-nome">Deluxe Suite</h3>
+
+                        <p class="suites-preco">A partir de ¥980 / noite</p>
+
+                        <p>
+                            Mais espaço e sofisticação para uma hospedagem especial.
+                        </p>
+
+                        <ul class="suites-comodidades">
+
+                            <li>Cama king-size</li>
+
+                            <li>Vista panorâmica da cidade</li>
+
+                            <li>Área de descanso</li>
+
+                            <li>Banheira</li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <!-- PRESIDENTIAL SUITE -->
+
+                    <div class="suites-card">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=85"
+                            alt="Suíte Presidencial do TAI Hotel"
+                            class="suites-imagem"
+                        >
+
+                        <h3 class="suites-nome">Presidential Suite</h3>
+
+                        <p class="suites-preco">A partir de ¥1.880 / noite</p>
+
+                        <p>
+                            Uma experiência de luxo e exclusividade.
+                        </p>
+
+                        <ul class="suites-comodidades">
+
+                            <li>Suíte ampla</li>
+
+                            <li>Sala de estar privativa</li>
+
+                            <li>Vista privilegiada</li>
+
+                            <li>Serviço de quarto exclusivo</li>
+
+                        </ul>
+
+                    </div>
+
                 </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LOCALIZAÇÃO -->
+
+        <section id="localizacao" class="localizacao">
+
+            <div class="localizacao-container">
+
+                <div class="localizacao-texto">
+
+                    <h2 class="localizacao-titulo">No coração de Xangai</h2>
+
+                    <p>
+                        O TAI Hotel está localizado no distrito de Huangpu, uma das regiões mais tradicionais e movimentadas de Xangai.
+
+                        Nossa localização permite fácil acesso a restaurantes, centros comerciais, estações de metrô e alguns dos principais pontos turísticos da cidade.
+                    </p>
+
+                    <h3 class="localizacao-subtitulo">Onde estamos</h3>
+
+                    <p>
+                        88 Zhongshan East 1st Road,
+                        Huangpu District,
+                        Shanghai, China.
+                    </p>
+
+                    <h3 class="localizacao-subtitulo">Como chegar</h3>
+
+                    <ul class="localizacao-lista">
+
+                        <li>Aeroporto de Hongqiao: aproximadamente 35 minutos de carro.</li>
+
+                        <li>Aeroporto de Pudong: aproximadamente 50 minutos de carro.</li>
+
+                        <li>Estação East Nanjing Road: aproximadamente 8 minutos a pé.</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TURISMO -->
+
+        <section id="turismo" class="turismo">
+
+            <div class="turismo-container">
+
+                <h2 class="turismo-titulo">Descubra Xangai</h2>
+
+                <p class="turismo-descricao">
+                    Explore a cultura, a história e a arquitetura de uma das cidades mais fascinantes da China.
+                </p>
+
+
+                <div class="turismo-lista">
+
+
+                    <div class="turismo-card">
+
+                        <h3 class="turismo-nome">The Bund</h3>
+
+                        <p class="turismo-distancia">
+                            Aproximadamente 10 minutos de caminhada
+                        </p>
+
+                        <p>
+                            Um dos cartões-postais mais famosos da cidade, conhecido pela vista dos arranha-céus e edifícios históricos às margens do rio Huangpu.
+                        </p>
+
+                    </div>
+
+
+                    <div class="turismo-card">
+
+                        <h3 class="turismo-nome">Oriental Pearl Tower</h3>
+
+                        <p class="turismo-distancia">
+                            Aproximadamente 15 minutos de carro
+                        </p>
+
+                        <p>
+                            Uma torre icônica que oferece vistas panorâmicas da cidade e uma experiência inesquecível.
+                        </p>
+
+                    </div>
+
+
+                    <div class="turismo-card">
+
+                        <h3 class="turismo-nome">Yu Garden</h3>
+
+                        <p class="turismo-distancia">
+                            Aproximadamente 15 minutos de caminhada
+                        </p>
+
+                        <p>
+                            Um jardim tradicional chinês com lagos, pontes e construções históricas que representam a cultura local.
+                        </p>
+
+                    </div>
+
+
+                    <div class="turismo-card">
+
+                        <h3 class="turismo-nome">Nanjing Road</h3>
+
+                        <p class="turismo-distancia">
+                            Aproximadamente 8 minutos de caminhada
+                        </p>
+
+                        <p>
+                            Uma das ruas comerciais mais famosas da China, repleta de lojas, restaurantes e entretenimento.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTATO -->
+
+        <section id="contato" class="contato">
+
+            <div class="contato-container">
+
+                <h2 class="contato-titulo">Sua experiência começa aqui.</h2>
+
+                <p>
+                    Estamos prontos para receber você e tornar sua estadia em Xangai inesquecível.
+                </p>
+
+                <div class="contato-informacoes">
+
+                    <p><strong>Endereço:</strong> 88 Zhongshan East 1st Road, Huangpu District, Shanghai, China.</p>
+
+                    <p><strong>Telefone:</strong> +86 21 5555 0188</p>
+
+                    <p><strong>E-mail:</strong> contact@taihotel.com</p>
+
+                    <p><strong>Instagram:</strong> @taihotel.shanghai</p>
+
+                </div>
+
+                <div class="contato-horarios">
+
+                    <h3>Horários de funcionamento</h3>
+
+                    <p>Check-in: a partir das 14h.</p>
+
+                    <p>Check-out: até as 12h.</p>
+
+                    <p>Recepção: atendimento 24 horas.</p>
+
+                </div>
+
             </div>
 
         </section>
 
     </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer class="rodape">
+
+        <p>TAI HOTEL — Experience Shanghai. Feel at home.</p>
+
+        <p>Shanghai, China | © 2026 TAI Hotel</p>
+
+    </footer>
+
 </body>
+
 </html>
