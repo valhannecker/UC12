@@ -1,0 +1,29 @@
+/* CONTATO */
+
+.contato {
+    padding: var(--espacamento);
+}
+
+.contato-container {
+    background-color: var(--cor-card);
+    padding: var(--espacamento);
+    border-radius: var(--raio-borda);
+}
+
+.contato-titulo {
+    font-size: 36px;
+}
+
+.contato-informacoes {
+    margin-top: 25px;
+}
+
+.contato-horarios {
+    margin-top: 25px;
+}
+
+.contato-horarios h3 {
+    color: var(--cor-principal);
+    font-size: 24px;
+    margin-bottom: 10px;
+}

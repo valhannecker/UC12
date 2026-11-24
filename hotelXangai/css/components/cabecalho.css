@@ -1,0 +1,32 @@
+/* CABEÇALHO E MENU */
+
+.cabecalho {
+    background-color: var(--cor-principal);
+    color: var(--cor-texto-claro);
+    padding: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho-titulo {
+    font-size: 55px;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu-opcao {
+    color: var(--cor-texto-claro);
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.menu-opcao:hover {
+    background-color: var(--cor-secundaria);
+}

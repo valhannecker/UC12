@@ -1,0 +1,62 @@
+/* SUÍTES */
+
+.suites {
+    padding: var(--espacamento);
+    background-color: var(--cor-destaque);
+}
+
+.suites-container {
+    text-align: center;
+}
+
+.suites-titulo {
+    font-size: 36px;
+}
+
+.suites-descricao {
+    margin-bottom: 30px;
+}
+
+.suites-lista {
+    display: flex;
+    gap: 25px;
+}
+
+.suites-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex: 1;
+    background-color: var(--cor-card);
+    border-radius: var(--raio-card);
+    padding: 25px;
+}
+
+.suites-nome {
+    color: var(--cor-principal);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.suites-preco {
+    color: var(--cor-secundaria);
+    font-weight: 600;
+}
+
+.suites-comodidades {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.suites-comodidades li {
+    margin-bottom: 8px;
+}
+
+.suites-imagem {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--raio-borda);
+    margin-bottom: 15px;
+}

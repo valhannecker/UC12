@@ -1,0 +1,42 @@
+/*SOBRE O HOTEL*/
+
+.sobre {
+    display: flex;
+    align-items: center;
+    gap: var(--espacamento);
+    padding: var(--espacamento);
+}
+
+.sobre-imagem {
+    width: 45%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--raio-borda);
+}
+
+.sobre-container {
+    flex: 1;
+    background-color: var(--cor-card);
+    border-radius: var(--raio-borda);
+    padding: var(--espacamento);
+}
+
+.sobre-titulo {
+    font-size: 32px;
+}
+
+.sobre-subtitulo {
+    color: var(--cor-principal);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.sobre-lista li {
+    margin-bottom: 8px;
+}
+
+.destaque {
+    color: var(--cor-principal);
+    font-weight: 600;
+}

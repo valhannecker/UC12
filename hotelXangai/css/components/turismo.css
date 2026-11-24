@@ -1,0 +1,42 @@
+/* TURISMO */
+
+.turismo {
+    background-color: var(--cor-destaque);
+    padding: var(--espacamento);
+}
+
+.turismo-container {
+    text-align: center;
+}
+
+.turismo-titulo {
+    font-size: 36px;
+}
+
+.turismo-descricao {
+    margin-bottom: 30px;
+}
+
+.turismo-lista {
+    display: flex;
+    gap: 20px;
+}
+
+.turismo-card {
+    flex: 1;
+    background-color: var(--cor-card);
+    border-radius: var(--raio-borda);
+    padding: 25px;
+}
+
+.turismo-nome {
+    color: var(--cor-principal);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.turismo-distancia {
+    color: var(--cor-secundaria);
+    font-size: 13px;
+    font-weight: 600;
+}

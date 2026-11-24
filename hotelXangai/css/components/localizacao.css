@@ -1,0 +1,25 @@
+/* LOCALIZAÇÃO */
+
+.localizacao {
+    padding: var(--espacamento);
+}
+
+.localizacao-container {
+    background-color: var(--cor-card);
+    padding: var(--espacamento);
+    border-radius: var(--raio-borda);
+}
+
+.localizacao-titulo {
+    font-size: 36px;
+}
+
+.localizacao-subtitulo {
+    color: var(--cor-principal);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.localizacao-lista li {
+    margin-bottom: 8px;
+}

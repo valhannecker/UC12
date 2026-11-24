@@ -1,0 +1,59 @@
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    /* CABEÇALHO */
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* SOBRE */
+
+    .sobre {
+        flex-direction: column;
+    }
+
+    .sobre-imagem {
+        width: 100%;
+        height: 250px;
+    }
+
+    .sobre-container {
+        width: 100%;
+    }
+
+
+    /* SUÍTES */
+
+    .suites-lista {
+        flex-direction: column;
+    }
+
+
+    /* TURISMO */
+
+    .turismo-lista {
+        flex-direction: column;
+    }
+
+
+    /* LOCALIZAÇÃO E CONTATO */
+
+    .localizacao-container,
+    .contato-container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+}
